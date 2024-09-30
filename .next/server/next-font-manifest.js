@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/pavlosobkiv/code/currency-exchange-app/src/app/layout\":[\"static/media/9919cdaa7472f3f1-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
