@@ -1,6 +1,5 @@
 import { MuiInputLabel, MuiOutlinedInput } from './overrides/input';
 import { MuiMenu, MuiMenuItem } from './overrides/menu';
-import { MuiButton } from './overrides/button';
 import { Red_Hat_Display } from '@next/font/google';
 
 const redHatDisplay = Red_Hat_Display({
@@ -95,7 +94,6 @@ function createComponents() {
     },
     MuiMenu,
     MuiMenuItem,
-    MuiButton,
     MuiOutlinedInput,
     MuiInputLabel,
     MuiDialogTitle: {

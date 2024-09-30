@@ -30,33 +30,6 @@ const nextConfig = {
 
     return config;
   },
-
-  images: {
-    // dangerouslyAllowSVG: true,
-    // contentDispositionType: 'attachment',
-    // contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",    temporary commented
-    formats: ['image/avif', 'image/webp'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'jt1nbf6nkmxvv680.public.blob.vercel-storage.com',
-        port: '',
-      },
-      {
-        protocol: 'https',
-        hostname: 'flagcdn.com',
-        port: '',
-      },
-    ],
-  },
-  async rewrites() {
-    return [
-      {
-        source: '/robots.txt',
-        destination: '/robots',
-      },
-    ];
-  },
 };
 
 module.exports = withBundleAnalyzer(nextConfig);

@@ -1,7 +1,7 @@
 import { dehydrate, HydrationBoundary, QueryClient } from '@tanstack/react-query';
-import Header from '../../components/header/header';
-import Footer from '../../components/footer';
-import { prefetchAvailableCurrency, prefetchCurrencyExchangeRates } from '../../shared/queries/currencies';
+import { prefetchAvailableCurrency, prefetchCurrencyExchangeRates } from '@/shared/queries/currencies';
+import Header from '@/components/header/header';
+import Footer from '@/components/footer';
 
 export const revalidate = false;
 

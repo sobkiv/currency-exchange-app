@@ -4,6 +4,9 @@ export const MuiMenu = {
     paper: {
       borderRadius: 32,
     },
+    list: {
+      padding: 0,
+    },
   },
 };
 

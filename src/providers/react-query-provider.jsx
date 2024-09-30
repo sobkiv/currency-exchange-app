@@ -1,7 +1,6 @@
 'use client';
 import { MutationCache, QueryCache, QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import useAlert from '../hooks/use-custom-snackbar';
 
 function makeQueryClient({ onError = () => {} } = {}) {
   return new QueryClient({
@@ -46,16 +45,7 @@ function getQueryClient(options) {
 }
 
 export default function ReactQueryProvider({ children }) {
-  const showSnackbar = useAlert();
-
-  const queryClient = getQueryClient({
-    onError: (error) =>
-      showSnackbar(error, {
-        color: 'error',
-        open: true,
-        autoHideDuration: 5000,
-      }),
-  });
+  const queryClient = getQueryClient();
 
   return (
     <QueryClientProvider client={queryClient}>
